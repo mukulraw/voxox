@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/pickdropLayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<TextView
+    android:id="@+id/searchBar1"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:padding="10dp"
+    android:drawablePadding="10dp"
+    android:text="Pickup Location"
+    android:drawableLeft="@drawable/circlebtn"
+    android:background="#ffffff"
+    android:textSize="20dp"
+    android:gravity="center_vertical"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingLeft="45dp"
+    android:text="K 185/3 Karan Palace"
+    android:textColor="#000000" />
+
+<TextView
+    android:id="@+id/searchBar2"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:padding="10dp"
+    android:drawablePadding="10dp"
+    android:text="Destination Location"
+    android:drawableLeft="@drawable/locationdrop"
+    android:background="#ffffff"
+    android:textSize="20dp"
+    android:gravity="center_vertical"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="#ffffff"
+    android:paddingLeft="45dp"
+    android:text="My Home"
+    android:textColor="#000000" />
+</LinearLayout>

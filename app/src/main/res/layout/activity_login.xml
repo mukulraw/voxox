@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context="com.example.faizan.voxox.loginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical"
+        android:layout_marginRight="25dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:src="@mipmap/cab_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="User Name"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:maxLines="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#c2c2c2"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c2c2c2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:textColor="#fff"
+            android:textColorHint="#c2c2c2"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c2c2c2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="right"
+            android:textColor="#ffcd2e"/>
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:background="@drawable/button"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="#fff"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="65dp"
+            android:src="@drawable/fbbutton"
+            android:background="@drawable/white_background"/>
+            
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/gbutton"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/white_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:alpha="0.7"
+            android:text="Don't have an account?  "
+            android:textColor="#ffcd2e"/>
+            <TextView
+                android:id="@+id/signupText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffcd2e"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
